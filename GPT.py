@@ -6,7 +6,7 @@ import datetime
 now = datetime.datetime.now()
 dia_hora = now.strftime("%d/%m/%Y - %H:%M:%S")
 prompt = ""
-carpeta_log = os.path.expanduser("~/Proyectos/GPT/")
+carpeta_log = os.path.expanduser("~/Proyectos/GPT/") #Cambiar carpeta Proyectos/GPT/ por la carpeta donde tengamos el script.
 
 with open(f"{carpeta_log}/API_KEY.txt", "r") as file:
    API_KEY = file.read().strip() 
